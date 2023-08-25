@@ -5,7 +5,7 @@ metadata:
 spec:
   project: development
   source:
-    repoURL: https://github.com/egarcia2506/argocd-autopilot-testing.git
+    repoURL: https://github.com/egarcia2506/argocd-autopilot-testing
     targetRevision: HEAD
     path: argocd/apps-definition
   destination:
