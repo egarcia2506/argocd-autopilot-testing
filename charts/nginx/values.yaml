@@ -7,7 +7,7 @@ environment: development
 domain: development-plus.com
 replicaCount: 1
 image:
-  repository: redis
+  repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
