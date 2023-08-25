@@ -1,6 +1,6 @@
 kind: Application
 metadata:
-  name: root
+  name: root-app
   namespace: argocd
 spec:
   project: development
