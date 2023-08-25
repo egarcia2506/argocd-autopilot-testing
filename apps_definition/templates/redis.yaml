@@ -7,10 +7,14 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: development
+    namespace: {{ .Values.spec.destination.namespace }}
     server: {{ .Values.spec.destination.server }}
-  project: default
+  project: {{ .Values.spec.project }}
   source:
     path: charts/redis
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

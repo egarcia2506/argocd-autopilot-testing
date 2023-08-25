@@ -5,7 +5,3 @@ spec:
     repoURL: https://github.com/egarcia2506/argocd-autopilot-testing
     targetRevision: HEAD
   project: development
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
