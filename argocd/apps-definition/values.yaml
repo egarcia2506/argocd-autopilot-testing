@@ -1,0 +1,6 @@
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/egarcia2506/argocd-autopilot-testing
+    targetRevision: HEAD

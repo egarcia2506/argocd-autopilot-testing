@@ -1,12 +1,12 @@
 kind: Application
 metadata:
-  name: app-of-apps
+  name: root
   namespace: argocd
 spec:
   project: development
   source:
     repoURL: https://github.com/egarcia2506/argocd-autopilot-testing.git
     targetRevision: HEAD
-    path: argocd/apps
+    path: argocd/apps-definition
   destination:
     server: https://kubernetes.default.svc
